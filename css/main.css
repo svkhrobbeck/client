@@ -1,7 +1,30 @@
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin-500.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
 /* CUSTOM PROPS */
 :root {
   --primary-bg-color: #fff;
   --text-color: #000;
+  --accent-color: ;
 }
 
 /* GLOBAL */
@@ -37,21 +60,14 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
-}
-
-/* CONTAINER */
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 51px;
 }
 
 /* SCROLL BAR */
@@ -98,13 +114,127 @@ body {
   flex-grow: 1;
 }
 
-/* BUTTON */
-.button {
-  display: inline-block;
+.secondary-button {
+  background-color: var(--primary-bg-color);
   border: none;
-  cursor: pointer;
   text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+}
+
+/* RETINA BGS */
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.site-header {
+  padding: 12px 0;
+  background-color: var(--primary-bg-color);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+}
+
+.logo__img {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.sitenav__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.site-header__donate-btn {
   text-decoration: none;
 }
 
-/* RETINA BGS *//*# sourceMappingURL=main.css.map */
+/* HERO */
+.hero {
+  background: url("../images/hero-bg.png") no-repeat center/cover;
+  height: calc(100vh - 51px);
+  padding: 128px 0 64px;
+  --text-color: #fff;
+  color: var(--text-color);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__title {
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--text-color);
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: auto;
+}
+
+.hero__play-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.hero__play-btn-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hero__bottom-line {
+  display: inline-block;
+  background-color: #E5E5E5;
+  height: 1px;
+  flex-grow: 1;
+}/*# sourceMappingURL=main.css.map */

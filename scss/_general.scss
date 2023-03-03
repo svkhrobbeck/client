@@ -38,13 +38,14 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
+  margin-top: 51px;
 }
 
 /* SCROLL BAR */
@@ -89,6 +90,18 @@ body {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.secondary-button {
+  background-color: var(--primary-bg-color);
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 /* RETINA BGS */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Home Page</title>
 
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="images/"> -->
@@ -15,8 +15,76 @@
   </head>
 
   <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container site-header__container">
+        <!-- LOGO -->
+        <a class="site-header__logo logo" href="/">
+          <img
+            class="logo__img"
+            src="images/logo.svg"
+            alt="Client logo"
+            width="130"
+            height="26"
+          />
+        </a>
+        <!-- /LOGO -->
+
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">About us</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">What We Do</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Media</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- DONATE -->
+          <a class="site-header__donate-btn" href="#">Donate</a>
+          <!-- /DONATE -->
+        </nav>
+        <!-- /SITENAV -->
+      </div>
+    </header>
+    <!-- /HEADER -->
+
     <!-- MAIN CONTENT -->
-    <main class="main-content"></main>
+    <main class="main-content">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__inner">
+          <h2 class="hero__title">
+            Save the environment today for a better tomorrow
+          </h2>
+          <div class="hero__buttons">
+            <button class="hero__btn secondary-button">What we do</button>
+            <button class="hero__play-btn">
+              <span class="hero__play-btn-inner">
+                <img src="images/icon-play.svg" alt="" aria-hidden="true" />
+                <span>Play Video</span>
+              </span>
+            </button>
+          </div>
+          <div class="hero__bottom">
+            <p class="hero__bottom-text">23,800 trees planted</p>
+            <span class="hero__bottom-line"></span>
+            <p class="hero__bottom-text">5840 donations collected</p>
+          </div>
+        </div>
+      </section>
+      <!-- /HERO -->
+    </main>
     <!-- /MAIN CONTENT -->
 
     <!-- SCRIPTS -->

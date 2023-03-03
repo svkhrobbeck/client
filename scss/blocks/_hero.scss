@@ -1,0 +1,56 @@
+/* HERO */
+.hero {
+  background: url("../images/hero-bg.png") no-repeat center / cover;
+  height: calc(100vh - 51px);
+  padding: 128px 0 64px;
+  --text-color: #fff;
+  color: var(--text-color);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__title {
+  @include for-headings;
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: auto;
+}
+
+.hero__play-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.hero__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 24px;
+}
+
+.hero__bottom-text {
+}
+
+.hero__bottom-line {
+  display: inline-block;
+  background-color: #E5E5E5;
+  height: 1px;
+  flex-grow: 1;
+}
