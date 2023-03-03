@@ -310,4 +310,33 @@ body {
   height: 64px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.supporters {
+  padding: 10px 0 64px;
+}
+
+.supporters__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.supporters__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.supporters__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.supporters {
+  padding: 10px 0 64px;
+}
+
+.supporters__title {
+  @include special-title;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #E5E5E5;
+  }
+}
+
+.supporters__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.supporters__logo {
+}
