@@ -3,3 +3,11 @@
   line-height: 1.2;
   color: var(--text-color);
 }
+
+@mixin special-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

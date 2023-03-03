@@ -1,8 +1,9 @@
 /* CUSTOM PROPS */
 :root {
   --primary-bg-color: #fff;
-  --text-color: #000;
-  --accent-color: ;
+  --text-color: #1d2130;
+  --secondary-text-color: #1D2130;
+  --primary-green: #70C174;
 }
 
 /* GLOBAL */
@@ -92,14 +93,27 @@ body {
   flex-grow: 1;
 }
 
-.secondary-button {
-  background-color: var(--primary-bg-color);
+.primary-button {
   border: none;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
+  background-color: var(--primary-green);
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.secondary-button {
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--primary-bg-color);
   padding: 16px 32px;
   border-radius: 4px;
 }
