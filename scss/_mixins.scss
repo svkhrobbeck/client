@@ -1,7 +1,13 @@
-@mixin for-headings {
-  font-size: 64px;
+@mixin for-headings($text) {
   line-height: 1.2;
-  color: var(--text-color);
+
+  @if $text == h2 {
+    font-size: 64px;
+    color: var(--text-color);
+  } @else if $text == h3 {
+    font-size: 48px;
+    font-weight: 700;
+  }
 }
 
 @mixin special-title {

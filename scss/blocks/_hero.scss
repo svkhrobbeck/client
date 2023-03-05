@@ -14,7 +14,7 @@
 }
 
 .hero__title {
-  @include for-headings;
+  @include for-headings(h2);
   max-width: 640px;
   margin-bottom: 48px;
 }
@@ -41,16 +41,13 @@
 .hero__bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 24px;
-}
-
-.hero__bottom-text {
 }
 
 .hero__bottom-line {
   display: inline-block;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   height: 1px;
   flex-grow: 1;
 }

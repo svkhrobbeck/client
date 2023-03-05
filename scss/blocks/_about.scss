@@ -17,12 +17,22 @@
 .about__title {
   @include special-title;
   margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--text-color);
+    width: 72px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -96px;
+  }
 }
 
 .about__heading {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
+  @include for-headings(h3);
   margin-bottom: 32px;
 }
 
