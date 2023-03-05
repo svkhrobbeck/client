@@ -449,4 +449,93 @@ body {
   width: 28px;
   height: 28px;
   background: url("../images/icon-dog.svg") no-repeat center/contain;
+}
+
+.projects {
+  padding: 96px 0;
+}
+
+.projects__titles {
+  padding-left: 96px;
+  max-width: 640px;
+  margin-bottom: 65px;
+}
+
+.projects__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  position: relative;
+}
+.projects__title::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--text-color);
+  width: 72px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -96px;
+}
+
+.projects__subtitle {
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.projects__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-projects {
+  max-width: 411px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.card-projects::before {
+  content: "";
+  display: inline-block;
+  background-color: #0b0706;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.card-projects__img {
+  width: 100%;
+  height: auto;
+}
+
+.card-projects__content {
+  padding: 80px 48px 48px;
+  --text-color: #fff;
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.card-projects__heading {
+  color: var(--text-color);
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.card-projects__desc {
+  color: var(--text-color);
+  margin-bottom: auto;
+}
+
+.card-projects__show-link {
+  margin-right: auto;
 }/*# sourceMappingURL=main.css.map */
