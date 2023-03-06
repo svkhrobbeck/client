@@ -1,0 +1,84 @@
+.index-statistics {
+  padding: 96px 0;
+  background-color: #000;
+  --text-color: #fff;
+  color: var(--text-color);
+}
+
+.index-statistics__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-statistics__content {
+  max-width: 610px;
+}
+
+.index-statistics__title {
+  @include for-headings(h3);
+  margin-bottom: 16px;
+}
+
+.index-statistics__text {
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+
+.index-statistics__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.index-statistics__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  &--trees {
+    &::before {
+      background-color: #bef3c0;
+    }
+  }
+
+  &--cleanliness {
+    &::before {
+      background-color: #ac94f1;
+    }
+  }
+
+  &--helping {
+    &::before {
+      background-color: #fff0ca;
+    }
+  }
+
+  &--animal-safety {
+    &::before {
+      background-color: #f9cf64;
+    }
+  }
+
+  &--feeding {
+    &::before {
+      background-color: #f38fbf;
+    }
+  }
+}
+
+.index-statistics__statistic-img {
+}

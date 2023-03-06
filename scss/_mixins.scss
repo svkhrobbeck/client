@@ -7,6 +7,9 @@
   } @else if $text == h3 {
     font-size: 48px;
     font-weight: 700;
+  } @else if $text == h4 {
+    font-size: 40px;
+    font-weight: 500;
   }
 }
 

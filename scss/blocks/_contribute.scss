@@ -1,0 +1,37 @@
+.contribute {
+}
+
+.contribute__inner {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  padding: 96px 0;
+  border-bottom: 1px solid #525560;
+}
+
+.contribute__heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.contribute__text {
+  font-size: 16px;
+  color: #525560;
+}
+
+.contribute__list {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  list-style-type: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contribute__item {
+  padding: 8px 12px;
+}
