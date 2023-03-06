@@ -1,0 +1,22 @@
+.video-about {
+}
+
+.video-about__inner {
+  background: url("../images/video-about-bg.png") no-repeat center / cover;
+  border-radius: 12px;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-about__play-btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+
+  img {
+    width: 64px;
+    height: 64px;
+  }
+}

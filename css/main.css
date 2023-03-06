@@ -69,7 +69,7 @@ body {
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
-  margin-top: 51px;
+  margin-top: 72px;
 }
 
 /* SCROLL BAR */
@@ -198,6 +198,10 @@ body {
 
 .site-header__donate-btn {
   text-decoration: none;
+  background-color: var(--text-color);
+  color: var(--primary-bg-color);
+  padding: 12px 32px;
+  border-radius: 4px;
 }
 
 /* HERO */
@@ -774,6 +778,76 @@ body {
   justify-content: center;
   border-radius: 50%;
   align-self: center;
+}
+
+.hero-about {
+  padding: 96px 0;
+}
+
+.hero-about__inner {
+  padding-left: 96px;
+}
+
+.hero-about__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  position: relative;
+}
+.hero-about__title::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--text-color);
+  width: 72px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -96px;
+}
+
+.hero-about__content {
+  display: flex;
+  gap: 64px;
+}
+.hero-about__content-right {
+  max-width: 496px;
+}
+
+.hero-about__subtitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 624px;
+  width: 100%;
+}
+
+.hero-about__heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.video-about__inner {
+  background: url("../images/video-about-bg.png") no-repeat center/cover;
+  border-radius: 12px;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-about__play-btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.video-about__play-btn img {
+  width: 64px;
+  height: 64px;
 }
 
 .site-footer {

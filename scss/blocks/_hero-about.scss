@@ -1,0 +1,52 @@
+.hero-about {
+  padding: 96px 0;
+}
+
+.hero-about__inner {
+  padding-left: 96px;
+}
+
+.hero-about__title {
+  @include special-title;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--text-color);
+    width: 72px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -96px;
+  }
+}
+
+
+.hero-about__content {
+  display: flex;
+  gap: 64px;
+
+  &-right {
+    max-width: 496px;
+  }
+}
+
+.hero-about__subtitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 624px;
+  width: 100%;
+}
+
+.hero-about__heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-about__desc {
+}
