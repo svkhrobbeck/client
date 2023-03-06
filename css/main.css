@@ -332,6 +332,9 @@ body {
 .supporters {
   padding: 10px 0 64px;
 }
+.supporters--about {
+  background-color: #eff7f2;
+}
 
 .supporters__title {
   font-size: 16px;
@@ -350,7 +353,7 @@ body {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .supporters__logo-wrapper {
@@ -848,6 +851,184 @@ body {
 .video-about__play-btn img {
   width: 64px;
   height: 64px;
+}
+
+.mission-about {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.mission-about__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 96px;
+}
+
+.mission-about__part {
+  max-width: 496px;
+}
+
+.mission-about__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.mission-about__subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.awards-about {
+  padding: 96px 0;
+}
+
+.awards-about__title {
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.awards-about__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0 90px;
+}
+
+.item-about {
+  text-align: center;
+}
+
+.item-about__img {
+  margin-bottom: 16px;
+}
+
+.item-about__year-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.item-about__heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.item-about__country-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero-donation {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.hero-donation__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 96px;
+}
+
+.hero-donation__donate {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 41px;
+  font-weight: 700;
+  position: relative;
+}
+.hero-donation__donate::before {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 2px;
+  background-color: #1d2130;
+  position: absolute;
+  left: -96px;
+  top: calc(50% - 2px);
+}
+
+.hero-donation__heading {
+  color: #000;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.hero-donation__text {
+  color: #525560;
+  margin-bottom: 32px;
+}
+
+.contribute-donation__inner {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  padding: 96px 0;
+  border-bottom: 1px solid #525560;
+}
+
+.contribute-donation__heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.contribute-donation__text {
+  font-size: 16px;
+  color: #525560;
+}
+
+.contribute-donation__list {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  list-style-type: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.contribute-donation__item {
+  padding: 8px 12px;
+}
+
+.how-use-donation {
+  padding: 96px 0;
+}
+
+.how-use-donation__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 96px;
+}
+
+.how-use-donation__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.how-use-donation__text {
+  padding: 0;
+  margin: 0;
+  max-width: 338px;
 }
 
 .site-footer {

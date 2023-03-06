@@ -1,0 +1,30 @@
+.mission-about {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.mission-about__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 96px;
+}
+
+.mission-about__part {
+  max-width: 496px;
+}
+
+.mission-about__title {
+  @include special-title;
+  margin-bottom: 16px;
+}
+
+.mission-about__subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.mission-about__des {
+}

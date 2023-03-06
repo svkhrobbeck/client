@@ -1,0 +1,41 @@
+.awards-about {
+  padding: 96px 0;
+}
+
+.awards-about__title {
+  @include for-headings(h3);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.awards-about__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0 90px;
+}
+
+.item-about {
+  text-align: center;
+}
+
+.item-about__img {
+  margin-bottom: 16px;
+}
+
+.item-about__year-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.item-about__heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.item-about__country-name {
+  font-size: 12px;
+  font-weight: 500;
+}
