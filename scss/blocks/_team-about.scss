@@ -1,0 +1,57 @@
+.team-about {
+}
+
+.team-about__heading {
+  @include for-headings(h3);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-about__desc {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.team-about__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 20px;
+}
+
+.item-team-about {
+  max-width: 296px;
+  text-align: center;
+}
+
+.item-team-about__img {
+  max-width: 296px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.item-team-about__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.item-team-about__job {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+.item-team-about__socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

@@ -461,6 +461,20 @@ body {
 .projects {
   padding: 96px 0;
 }
+.projects--wwd {
+  padding-bottom: 0;
+}
+.projects--wwd .projects__title {
+  text-align: center;
+}
+.projects--wwd .projects__title::before {
+  display: none;
+}
+.projects--wwd .projects__subtitle {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto 64px;
+}
 
 .projects__titles {
   padding-left: 96px;
@@ -927,6 +941,223 @@ body {
 .item-about__country-name {
   font-size: 12px;
   font-weight: 500;
+}
+
+.journey-about {
+  padding: 96px 0;
+}
+
+.journey-about__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 64px 0;
+  border-radius: 12px;
+}
+
+.journey-about__content {
+  padding-left: 96px;
+  --text-color: #fff;
+  color: var(--text-color);
+  max-width: 490px;
+}
+
+.journey-about__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.journey-about__subtitle {
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.journey-about__text {
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+
+.journey-about__statistics-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.journey-about__statistics-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.journey-about__statistics-text {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.team-about__heading {
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-about__desc {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.team-about__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 20px;
+}
+
+.item-team-about {
+  max-width: 296px;
+  text-align: center;
+}
+
+.item-team-about__img {
+  max-width: 296px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.item-team-about__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.item-team-about__job {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+.item-team-about__socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-wwd {
+  padding: 96px 0;
+}
+
+.hero-wwd__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-wwd__content {
+  padding-left: 96px;
+  max-width: 690px;
+}
+
+.hero-wwd__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  position: relative;
+}
+.hero-wwd__title::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--text-color);
+  width: 72px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -96px;
+}
+
+.herp-wwd__subtitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 34px;
+}
+
+.environment-wwd {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.environment-wwd__title {
+  line-height: 1.2;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+
+.environment-wwd__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 30px;
+}
+
+.item-environment-wwd {
+  max-width: 384px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.item-environment-wwd::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: no-repeat center/contain;
+  flex-shrink: 0;
+}
+.item-environment-wwd--home::before {
+  background-image: url("../images/icon-home.svg");
+}
+.item-environment-wwd--wave::before {
+  background-image: url("../images/icon-wave.svg");
+}
+.item-environment-wwd--grass::before {
+  background-image: url("../images/icon-grass.svg");
+}
+.item-environment-wwd--water::before {
+  background-image: url("../images/icon-water.svg");
+}
+.item-environment-wwd--dog::before {
+  background-image: url("../images/icon-dog.svg");
+}
+.item-environment-wwd--plant::before {
+  background-image: url("../images/icon-plant.svg");
+}
+
+.item-environment__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.item-environment-wwd__desc {
+  font-size: 14px;
 }
 
 /* HERO */

@@ -1,0 +1,78 @@
+.environment-wwd {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.environment-wwd__title {
+  @include for-headings(h3);
+  margin-bottom: 64px;
+}
+
+.environment-wwd__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 30px;
+}
+
+.item-environment-wwd {
+  max-width: 384px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: no-repeat center / contain;
+    flex-shrink: 0;
+  }
+
+  &--home {
+    &::before {
+      background-image: url("../images/icon-home.svg");
+    }
+  }
+
+  &--wave {
+    &::before {
+      background-image: url("../images/icon-wave.svg");
+    }
+  }
+
+  &--grass {
+    &::before {
+      background-image: url("../images/icon-grass.svg");
+    }
+  }
+
+  &--water {
+    &::before {
+      background-image: url("../images/icon-water.svg");
+    }
+  }
+
+  &--dog {
+    &::before {
+      background-image: url("../images/icon-dog.svg");
+    }
+  }
+
+  &--plant {
+    &::before {
+      background-image: url("../images/icon-plant.svg");
+    }
+  }
+}
+
+.item-environment__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.item-environment-wwd__desc {
+  font-size: 14px;
+}

@@ -1,8 +1,23 @@
 .projects {
   padding: 96px 0;
-}
 
-.projects__inner {
+  &--wwd {
+    padding-bottom: 0;
+
+    .projects__title {
+      text-align: center;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .projects__subtitle {
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto 64px;
+    }
+  }
 }
 
 .projects__titles {
