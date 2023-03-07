@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="images/"> -->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header site-header--contact">
+      <div class="container site-header__container">
+        <!-- LOGO -->
+        <a class="site-header__logo logo" href="/">
+          <img
+            class="logo__img"
+            src="images/logo.svg"
+            alt="Client logo"
+            width="130"
+            height="26"
+          />
+        </a>
+        <!-- /LOGO -->
+
+        <!-- SITENAV -->
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="/" class="sitenav__link">Home</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="about.html" class="sitenav__link">About us</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="what-we-do.html" class="sitenav__link">What We Do</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Media</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- DONATE -->
+          <a class="site-header__donate-btn" href="donation.html">Donate</a>
+          <!-- /DONATE -->
+        </nav>
+        <!-- /SITENAV -->
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- INFO-CONTACT -->
+      <section class="info-contact">
+        <div class="container info-contact__inner">
+          <div class="info-contact__content">
+            <h2 class="info-contact__title">Contact us</h2>
+            <h3 class="info-contact__subtitle">We'd love to hear from you</h3>
+            <p class="info-contact__desc">
+              Have any question in mind or want to enquire? Please feel free to
+              contact us through the form or the following details.
+            </p>
+          </div>
+          <div class="info-contact__data data-info-contact">
+            <h4 class="data-info-contact__main-heading">Let's talk!</h4>
+            <div class="data-info-contact__inner">
+              <a class="data-info-contact__link" href="tel:+123456789"
+                >+1 23 456 789</a
+              >
+              <a
+                class="data-info-contact__link"
+                href="mailto:hello@finsweet.com"
+                >hello@finsweet.com</a
+              >
+            </div>
+            <h4 class="data-info-contact__heading">Headoffice</h4>
+            <p class="data-info-contact__text">
+              8 Brewery Drive, Hudson, NH 03051 USA
+            </p>
+            <h4 class="data-info-contact__heading">Branch Office</h4>
+            <p class="data-info-contact__text">
+              178 Marconi St., Venice, 34293 Italy
+            </p>
+            <div class="data-info-contact__socials">
+              <a class="data-info-contact__social-link" href="#">
+                <img
+                  class="data-info-contact__social-img"
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+              <a class="data-info-contact__social-link" href="#">
+                <img
+                  class="data-info-contact__social-img"
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+              <a class="data-info-contact__social-link" href="#">
+                <img
+                  class="data-info-contact__social-img"
+                  src="images/icon-linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /INFO-CONTACT -->
+
+      <!-- FORM-CONTACT -->
+      <section class="form-contact">
+        <form class="form-contact__form">
+          <div class="form-contact__fields">
+            <div class="form-contact__field">
+              <label class="form-contact__field-label" for="first-name-contact"
+                >First Name</label
+              >
+              <input
+                class="form-contact__field-input"
+                type="text"
+                name="first_name"
+                id="first-name-contact"
+              />
+            </div>
+            <div class="form-contact__field">
+              <label class="form-contact__field-label" for="last-name-contact"
+                >Last Name</label
+              >
+              <input
+                class="form-contact__field-input"
+                type="text"
+                name="last_name"
+                id="last-name-contact"
+              />
+            </div>
+          </div>
+          <div class="form-contact__fields">
+            <div class="form-contact__field">
+              <label class="form-contact__field-label" for="email-contact"
+                >Email Id</label
+              >
+              <input
+                class="form-contact__field-input"
+                type="text"
+                name="email"
+                id="email-contact"
+              />
+            </div>
+            <div class="form-contact__field">
+              <label class="form-contact__field-label" for="subject-contact"
+                >Subject</label
+              >
+              <input
+                class="form-contact__field-input"
+                type="text"
+                name="subject"
+                id="subject-contact"
+              />
+            </div>
+          </div>
+          <div class="form-contact__fields">
+            <div class="form-contact__field">
+              <label class="form-contact__field-label" for="message-contact"
+                >Message</label
+              >
+              <textarea
+                class="form-contact__field-message"
+                placeholder="Type your Message"
+                name="message"
+                id="message-contact"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-contact__fields form-contact__fields--submit">
+            <button
+              class="form-contact__submit-btn primary-button"
+              type="submit"
+            >
+              Send message
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- /FORM-CONTACT -->
+
+      <!-- MAP CONTACT -->
+      <section class="map-contact">
+        <iframe class="map-contact__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6972.269384723835!2d66.97520209830114!3d39.65990944562487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d18b7c2e59337%3A0x532c8e039ecc92af!2sRegiston%20Square!5e0!3m2!1sen!2s!4v1678218546881!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <!-- /MAP CONTACT -->
+    </main>
+    <!-- /MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container site-footer__container">
+        <a class="site-header__logo logo" href="/">
+          <img
+            class="logo"
+            src="images/logo-white.svg"
+            alt="Client logo"
+            width="110"
+            height="22"
+          />
+        </a>
+        <div class="site-footer__lists">
+          <ul class="site-footer__list">
+            <li class="site-footer__item"><h3>Our team</h3></li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">About us</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Team</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">What we do</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Contact</a>
+            </li>
+          </ul>
+          <ul class="site-footer__list">
+            <li class="site-footer__item"><h3>More</h3></li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Projects</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Events</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Donate</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Blog</a>
+            </li>
+          </ul>
+          <ul class="site-footer__list">
+            <li class="site-footer__item"><h3>Connect</h3></li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Facebook</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Instagram</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Twitter</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__link" href="/">Linkdin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__right">
+          <h2 class="site-footer__right-title">
+            Subscribe to get latest updates
+          </h2>
+          <form class="site-footer__form">
+            <input
+              class="site-footer__form-input"
+              type="text"
+              placeholder="Your email"
+            />
+            <button class="site-footer__form-btn" type="button">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
