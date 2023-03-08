@@ -1,5 +1,18 @@
 .events {
   margin-bottom: 96px;
+
+  &--erm {
+    .events__inner {
+      flex-direction: column;
+      gap: 24px;
+
+      .events__inner-part {
+        max-width: 768px;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
 .events__title {

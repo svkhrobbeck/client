@@ -1,0 +1,30 @@
+.hero-erm {
+  padding: 96px 0;
+  background-color: #eff7f2;
+}
+
+.hero-erm__inner {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.hero-erm__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 48px;
+}
+
+.hero-erm__info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.hero-erm__info-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}

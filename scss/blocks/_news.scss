@@ -30,6 +30,13 @@
 
 .card-news {
   max-width: 302px;
+  position: relative;
+}
+
+.card-news__link {
+  position: absolute;
+  inset: 0;
+  display: inline-block;
 }
 
 .card-news__img {
@@ -37,7 +44,6 @@
 }
 
 .card-news__content {
-  
 }
 
 .card-news__heading {
