@@ -1025,6 +1025,14 @@ body {
   background-color: #f38fbf;
 }
 
+@media only screen and (max-width: 576px) {
+  .index-statistics__statistic-img {
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* JOIN */
 .join {
   padding: 96px 0;
