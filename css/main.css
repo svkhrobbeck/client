@@ -167,6 +167,11 @@ body {
 .site-header--contact {
   background-color: #ebf0f9;
 }
+@media only screen and (min-width: 768px) {
+  .site-header {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  }
+}
 
 .site-header__container {
   display: flex;
@@ -253,6 +258,7 @@ body {
     padding: 50px 40px 0;
     gap: 10px;
     left: -100%;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.4);
     transition: left 0.5s ease, width 0.5s ease, padding 0.5s ease;
   }
   .sitenav.show {
@@ -1190,7 +1196,7 @@ body {
 
 .card-news__img {
   margin-bottom: 16px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 576px) {
   .card-news__img {
