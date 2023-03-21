@@ -1,18 +1,46 @@
 .how-use-donation {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .how-use-donation__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 96px;
+  transition: gap 0.5s ease;
+
+  @media only screen and (max-width: $desktop) {
+    gap: 64px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    gap: 48px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+   gap: 24px;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .how-use-donation__heading {
   margin: 0;
   padding: 0;
-  font-size: 48px;
+  @include for-headings(h5);
   font-weight: 700;
 }
 
@@ -20,4 +48,8 @@
   padding: 0;
   margin: 0;
   max-width: 338px;
+
+  @media only screen and (max-width: $tablet) {
+    max-width: none;
+   }
 }

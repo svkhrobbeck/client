@@ -1,16 +1,36 @@
 .contribute-donation {
+  padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .contribute-donation__inner {
   display: flex;
   align-items: center;
-  gap: 96px;
-  padding: 96px 0;
+  gap: 30px 96px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #525560;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .contribute-donation__heading {
-  font-size: 48px;
+  @include for-headings(h3);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2px;
@@ -30,6 +50,12 @@
   justify-content: space-between;
   list-style-type: none;
   border-bottom: 1px solid #e5e5e5;
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .contribute-donation__item {
