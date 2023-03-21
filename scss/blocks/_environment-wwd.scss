@@ -6,6 +6,10 @@
 .environment-wwd__title {
   @include for-headings(h3);
   margin-bottom: 64px;
+
+  @media only screen and (max-width: $tablet) {
+    text-align: center;
+  }
 }
 
 .environment-wwd__list {

@@ -29,7 +29,6 @@
 
 .news__cards {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   gap: 20px;
   flex-wrap: wrap;
@@ -44,9 +43,13 @@
   max-width: 302px;
   position: relative;
 
+  @media only screen and (max-width: $tablet) {
+    max-width: 250px;
+    width: 100%;
+  }
+
   @media only screen and (max-width: $mobile) {
     max-width: 100%;
-    width: 100%;
   }
 }
 

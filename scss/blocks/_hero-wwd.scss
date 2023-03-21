@@ -1,16 +1,43 @@
 .hero-wwd {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .hero-wwd__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column-reverse;
+  }
 }
 
 .hero-wwd__content {
   padding-left: 96px;
   max-width: 690px;
+  transition: padding-left 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-left: 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: none;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .hero-wwd__title {
@@ -27,6 +54,10 @@
     position: absolute;
     top: calc(50% - 1px);
     left: -96px;
+
+    @media only screen and (max-width: $tablet-l) {
+      display: none;
+    }
   }
 }
 
