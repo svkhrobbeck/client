@@ -5,6 +5,15 @@
   padding: 96px 0;
   background-color: #000;
   color: var(--text-color);
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .site-footer__container {

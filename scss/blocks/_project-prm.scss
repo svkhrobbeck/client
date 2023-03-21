@@ -1,11 +1,24 @@
 .project-prm {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .project-prm__inner {
   max-width: 832px;
   width: 100%;
   margin: 0 auto;
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .project-prm__title {
@@ -26,7 +39,7 @@
 }
 
 .project-prm__subtitle {
-  font-size: 56px;
+  @include for-headings(h5);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 32px;
@@ -55,4 +68,8 @@
   font-weight: 700;
   margin-bottom: 16px;
   padding-left: 20px;
+
+  @media only screen and (max-width: $mobile) {
+    list-style-type: none;
+  }
 }

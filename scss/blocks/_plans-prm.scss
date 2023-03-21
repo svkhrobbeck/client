@@ -11,6 +11,19 @@
   gap: 32px;
   padding: 0 128px;
   list-style-type: none;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 0 96px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 0 48px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
 .item-plans-prm {
