@@ -4,7 +4,6 @@
   &--erm {
     .events__inner {
       flex-direction: column;
-      gap: 24px;
 
       .events__inner-part {
         max-width: 768px;
@@ -12,6 +11,24 @@
         justify-content: space-between;
       }
     }
+  }
+}
+
+.events__inner {
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+.events__inner-part {
+  flex-grow: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -76,6 +93,19 @@
     width: 44px;
     height: 2px;
     background-color: var(--text-color);
+
+    @media only screen and (max-width: $mobile) {
+      display: none;
+    }
+    @media only screen and (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 

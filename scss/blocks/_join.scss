@@ -12,11 +12,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  
+  @media only screen and (max-width: $mobile) {
+    padding: 67px 30px;
+  }
 }
 
 .join__heading {
   max-width: 630px;
-  font-size: 48px;
+  @include for-headings(h3);
   width: 100%;
   line-height: 1.2;
   margin: 0;
@@ -29,4 +34,9 @@
   align-items: center;
   justify-content: center;
   gap: 32px;
+
+  
+  @media only screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+  }
 }

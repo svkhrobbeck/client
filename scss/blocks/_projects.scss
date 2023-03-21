@@ -24,6 +24,18 @@
   padding-left: 96px;
   max-width: 640px;
   margin-bottom: 65px;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-left: 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: none;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .projects__title {
@@ -40,6 +52,10 @@
     position: absolute;
     top: calc(50% - 1px);
     left: -96px;
+
+    @media only screen and (max-width: $tablet-l) {
+      display: none;
+    }
   }
 }
 
@@ -52,10 +68,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .card-projects {
   max-width: 411px;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -69,11 +91,21 @@
     z-index: 1;
     inset: 0;
   }
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+    height: 350px;
+  }
 }
 
 .card-projects__img {
   width: 100%;
   height: auto;
+
+  @media only screen and (max-width: $tablet-l) {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .card-projects__content {
@@ -84,17 +116,41 @@
   inset: 0;
   display: inline-flex;
   flex-direction: column;
+
+  @media only screen and (max-width: $desktop) {
+    padding: 40px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 30px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 20px;
+  }
 }
 
 .card-projects__heading {
   color: var(--text-color);
   font-size: 28px;
   margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .card-projects__desc {
   color: var(--text-color);
   margin-bottom: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .card-projects__show-link {

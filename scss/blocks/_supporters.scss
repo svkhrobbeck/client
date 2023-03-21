@@ -26,10 +26,7 @@
 .supporters__logo-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: space-around;
+  gap: 34px 24px;
   flex-wrap: wrap;
-}
-
-.supporters__logo {
 }

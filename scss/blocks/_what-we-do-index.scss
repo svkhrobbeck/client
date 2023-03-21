@@ -5,13 +5,25 @@
 
 .what-we-do__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 30px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .what-we-do__content {
   max-width: 608px;
   padding-left: 96px;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-left: 0;
+    max-width: none;
+  }
 }
 
 .what-we-do__title {
@@ -28,6 +40,10 @@
     position: absolute;
     top: calc(50% - 1px);
     left: -96px;
+
+    @media only screen and (max-width: $tablet-l) {
+      display: none;
+    }
   }
 }
 
