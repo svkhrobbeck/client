@@ -1,5 +1,14 @@
 .journey-about {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .journey-about__inner {
@@ -9,6 +18,21 @@
   background-color: #000;
   padding: 64px 0;
   border-radius: 12px;
+  gap: 40px;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column-reverse;
+    padding: 0 20px 48px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 0 20px 24px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 0 20px 20px;
+  }
 }
 
 .journey-about__content {
@@ -16,6 +40,19 @@
   --text-color: #fff;
   color: var(--text-color);
   max-width: 490px;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $desktop) {
+    padding-left: 48px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .journey-about__title {
@@ -39,6 +76,12 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  list-style-type: none;
+
+  @media only screen and (max-width: $mobile) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .journey-about__statistics-heading {
@@ -52,4 +95,15 @@
   opacity: 0.6;
 }
 .journey-about__img {
+  max-width: 648px;
+  width: 100%;
+  height: auto;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 600px;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    margin-top: -50px;
+  }
 }

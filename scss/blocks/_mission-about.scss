@@ -1,6 +1,15 @@
 .mission-about {
   padding: 96px 0;
   background-color: #eff7f2;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .mission-about__inner {
@@ -8,10 +17,33 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 0 96px;
+  gap: 50px;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column;
+    padding: 0 48px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 0 24px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: auto;
+  }
 }
 
 .mission-about__part {
   max-width: 496px;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .mission-about__title {

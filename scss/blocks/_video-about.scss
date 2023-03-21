@@ -1,4 +1,14 @@
 .video-about {
+  padding: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 50% 0 0;
+    z-index: -1;
+    background-color: #eff7f2;
+  }
 }
 
 .video-about__inner {

@@ -3,6 +3,15 @@
   background-color: #000;
   --text-color: #fff;
   color: var(--text-color);
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .index-statistics__inner {
@@ -44,9 +53,8 @@
   gap: 16px 24px;
   list-style-type: none;
 
-  
   @media only screen and (max-width: $mobile) {
-   justify-content: center;
+    justify-content: center;
   }
 }
 

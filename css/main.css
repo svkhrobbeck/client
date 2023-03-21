@@ -386,6 +386,17 @@ body {
 
 .about {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .about {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 48px 0;
+  }
 }
 
 .about__inner {
@@ -550,6 +561,17 @@ body {
 .what-we-do {
   padding: 96px 0;
   background-color: var(--primary-light);
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .what-we-do {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .what-we-do {
+    padding: 48px 0;
+  }
 }
 
 .what-we-do__inner {
@@ -684,6 +706,17 @@ body {
 
 .projects {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .projects {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 48px 0;
+  }
 }
 .projects--wwd {
   padding-bottom: 0;
@@ -878,6 +911,17 @@ body {
   background-color: #000;
   --text-color: #fff;
   color: var(--text-color);
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .index-statistics {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .index-statistics {
+    padding: 48px 0;
+  }
 }
 
 .index-statistics__inner {
@@ -978,6 +1022,17 @@ body {
 /* JOIN */
 .join {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .join {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .join {
+    padding: 48px 0;
+  }
 }
 
 .join__inner {
@@ -1038,6 +1093,17 @@ body {
 
 .news {
   margin-bottom: 96px;
+  transition: padding-bottom 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .news {
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .news {
+    padding-bottom: 48px;
+  }
 }
 
 .news__title {
@@ -1124,6 +1190,17 @@ body {
 
 .events {
   margin-bottom: 96px;
+  transition: padding-bottom 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .events {
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .events {
+    padding-bottom: 48px;
+  }
 }
 .events--erm .events__inner {
   flex-direction: column;
@@ -1281,10 +1358,26 @@ body {
 
 .hero-about {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .hero-about {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-about {
+    padding: 48px 0;
+  }
 }
 
 .hero-about__inner {
   padding-left: 96px;
+}
+@media only screen and (max-width: 992px) {
+  .hero-about__inner {
+    padding-left: 0;
+  }
 }
 
 .hero-about__title {
@@ -1311,21 +1404,63 @@ body {
   top: calc(50% - 1px);
   left: -96px;
 }
+@media only screen and (max-width: 992px) {
+  .hero-about__title::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-about__title {
+    text-align: center;
+  }
+}
 
 .hero-about__content {
   display: flex;
   gap: 64px;
 }
+@media only screen and (max-width: 992px) {
+  .hero-about__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .hero-about__content-right {
   max-width: 496px;
 }
+@media only screen and (max-width: 992px) {
+  .hero-about__content-right {
+    max-width: none;
+  }
+}
 
 .hero-about__subtitle {
-  font-size: 56px;
-  font-weight: 700;
   line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 56px;
   max-width: 624px;
   width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .hero-about__subtitle {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-about__subtitle {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero-about__subtitle {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-about__subtitle {
+    max-width: none;
+    text-align: center;
+  }
 }
 
 .hero-about__heading {
@@ -1333,6 +1468,428 @@ body {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
+}
+
+.video-about {
+  padding: 20px;
+  position: relative;
+}
+.video-about::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0;
+  z-index: -1;
+  background-color: #eff7f2;
+}
+
+.video-about__inner {
+  background: url("../images/video-about-bg.png") no-repeat center/cover;
+  border-radius: 12px;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-about__play-btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.video-about__play-btn img {
+  width: 64px;
+  height: 64px;
+}
+
+.mission-about {
+  padding: 96px 0;
+  background-color: #eff7f2;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .mission-about {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mission-about {
+    padding: 48px 0;
+  }
+}
+
+.mission-about__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 96px;
+  gap: 50px;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .mission-about__inner {
+    flex-direction: column;
+    padding: 0 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mission-about__inner {
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mission-about__inner {
+    padding: auto;
+  }
+}
+
+.mission-about__part {
+  max-width: 496px;
+}
+@media only screen and (max-width: 992px) {
+  .mission-about__part {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mission-about__part {
+    text-align: center;
+  }
+}
+
+.mission-about__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .mission-about__title {
+    font-size: 15px;
+  }
+}
+
+.mission-about__subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.awards-about {
+  padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .awards-about {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .awards-about {
+    padding: 48px 0;
+  }
+}
+
+.awards-about__title {
+  line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+@media only screen and (max-width: 992px) {
+  .awards-about__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .awards-about__title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .awards-about__title {
+    font-size: 24px;
+  }
+}
+
+.awards-about__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0 90px;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .awards-about__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .awards-about__list {
+    padding: 0 24px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .awards-about__list {
+    padding: 0;
+  }
+}
+
+.item-about {
+  text-align: center;
+}
+
+.item-about__img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.item-about__year-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.item-about__heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.item-about__country-name {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.journey-about {
+  padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .journey-about {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .journey-about {
+    padding: 48px 0;
+  }
+}
+
+.journey-about__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 64px 0;
+  border-radius: 12px;
+  gap: 40px;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .journey-about__inner {
+    flex-direction: column-reverse;
+    padding: 0 20px 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .journey-about__inner {
+    padding: 0 20px 24px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .journey-about__inner {
+    padding: 0 20px 20px;
+  }
+}
+
+.journey-about__content {
+  padding-left: 96px;
+  --text-color: #fff;
+  color: var(--text-color);
+  max-width: 490px;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 1240px) {
+  .journey-about__content {
+    padding-left: 48px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .journey-about__content {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .journey-about__content {
+    text-align: center;
+  }
+}
+
+.journey-about__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.journey-about__subtitle {
+  line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 992px) {
+  .journey-about__subtitle {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .journey-about__subtitle {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .journey-about__subtitle {
+    font-size: 24px;
+  }
+}
+
+.journey-about__text {
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+
+.journey-about__statistics-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style-type: none;
+}
+@media only screen and (max-width: 576px) {
+  .journey-about__statistics-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.journey-about__statistics-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.journey-about__statistics-text {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.journey-about__img {
+  max-width: 648px;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1240px) {
+  .journey-about__img {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .journey-about__img {
+    margin-top: -50px;
+  }
+}
+
+.team-about__heading {
+  line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 992px) {
+  .team-about__heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team-about__heading {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .team-about__heading {
+    font-size: 24px;
+  }
+}
+
+.team-about__desc {
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.team-about__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px 20px;
+}
+
+.item-team-about {
+  max-width: 296px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .item-team-about {
+    max-width: 250px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .item-team-about {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.item-team-about__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.item-team-about__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.item-team-about__job {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+.item-team-about__socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .site-footer {

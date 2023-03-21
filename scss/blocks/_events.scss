@@ -1,5 +1,14 @@
 .events {
   margin-bottom: 96px;
+  transition: padding-bottom 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding-bottom: 64px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding-bottom: 48px;
+  }
 
   &--erm {
     .events__inner {
