@@ -3088,6 +3088,137 @@ body {
   }
 }
 
+.hero-erm {
+  padding: 96px 0;
+  background-color: #eff7f2;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .hero-erm {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-erm {
+    padding: 48px 0;
+  }
+}
+
+.hero-erm__inner {
+  max-width: 768px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 576px) {
+  .hero-erm__inner {
+    text-align: center;
+  }
+}
+
+.hero-erm__title {
+  line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 56px;
+  margin-bottom: 48px;
+}
+@media only screen and (max-width: 992px) {
+  .hero-erm__title {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-erm__title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero-erm__title {
+    font-size: 24px;
+  }
+}
+
+.hero-erm__info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px 48px;
+  flex-wrap: wrap;
+}
+
+.hero-erm__info-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.about-erm {
+  padding: 96px 0;
+  transition: padding 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .about-erm {
+    padding: 64px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-erm {
+    padding: 48px 0;
+  }
+}
+
+.about-erm__inner {
+  max-width: 768px;
+  margin: 0 auto;
+  transition: padding-left 0.5s ease;
+}
+@media only screen and (max-width: 576px) {
+  .about-erm__inner {
+    text-align: center;
+  }
+}
+
+.about-erm__title {
+  line-height: 1.2;
+  transition: font-size 0.5s ease;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 992px) {
+  .about-erm__title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-erm__title {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about-erm__title {
+    font-size: 24px;
+  }
+}
+
+.about-erm__desc:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.about-erm__img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 768px) {
+  .about-erm__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+  }
+}
+
 .site-footer {
   margin: 0;
   padding: 0;

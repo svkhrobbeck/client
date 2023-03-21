@@ -1,10 +1,24 @@
 .about-erm {
   padding: 96px 0;
+  transition: padding 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 0;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 0;
+  }
 }
 
 .about-erm__inner {
   max-width: 768px;
   margin: 0 auto;
+  transition: padding-left 0.5s ease;
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .about-erm__title {
@@ -22,5 +36,12 @@
   max-width: 100%;
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 32px;
+
+  @media only screen and (max-width: $tablet) {
+    object-fit: cover;
+    height: 200px;
+  }
 }
