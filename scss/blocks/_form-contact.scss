@@ -3,6 +3,14 @@
   max-width: 768px;
   width: 100%;
   margin: 0 auto;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 64px 20px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 20px;
+  }
 }
 
 .form-contact__fields {
@@ -18,12 +26,20 @@
   &--submit {
     justify-content: center;
   }
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .form-contact__field {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  @media only screen and (max-width: $tablet) {
+    width: 100%;  
+  }
 }
 
 .form-contact__field-label {
