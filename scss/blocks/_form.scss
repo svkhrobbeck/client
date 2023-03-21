@@ -1,4 +1,4 @@
-.form-contact {
+.form {
   padding: 96px 0;
   max-width: 768px;
   width: 100%;
@@ -9,11 +9,11 @@
   }
 
   @media only screen and (max-width: $tablet) {
-    padding: 48px 20px;
+    padding: 36px 20px;
   }
 }
 
-.form-contact__fields {
+.form__fields {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,36 +27,37 @@
     justify-content: center;
   }
 
-  @media only screen and (max-width: $tablet) {
+  @media only screen and (max-width: $mobile) {
     flex-direction: column;
   }
 }
 
-.form-contact__field {
+.form__field {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 
-  @media only screen and (max-width: $tablet) {
-    width: 100%;  
+  @media only screen and (max-width: $mobile) {
+    width: 100%;
+    flex-grow: 0;
   }
 }
 
-.form-contact__field-label {
+.form__field-label {
   font-size: 12px;
   font-weight: 700;
   color: var(--text-color);
   margin-bottom: 8px;
 }
 
-.form-contact__field-input {
+.form__field-input {
   border: none;
   border-bottom: 1px solid #e5e5e5;
   padding: 4px 10px;
   border-radius: 4px;
 }
 
-.form-contact__field-message {
+.form__field-message {
   resize: vertical;
   width: 100%;
   min-height: 150px;

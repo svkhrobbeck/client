@@ -384,10 +384,15 @@
               You can contribute to make the environment greener!
             </h2>
             <div class="join__button-wrapper">
-              <button class="join__add-btn primary-button">
+              <button
+                class="join__add-btn primary-button"
+                data-modal-open="[data-modal]"
+              >
                 Join as a volunteer
               </button>
-              <button class="join__donate-btn secondary-button">Donate</button>
+              <a class="join__donate-btn secondary-button" href="donation.html"
+                >Donate</a
+              >
             </div>
           </div>
         </div>
@@ -634,6 +639,110 @@
       </div>
     </footer>
     <!-- /FOOTER -->
+
+    <!-- MODAL -->
+    <div class="modal" data-modal>
+      <div class="modal__inner">
+        <div class="modal__top">
+          <button class="modal__close-btn" data-modal-close>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 13L13 1M1 1L13 13"
+                stroke="white"
+                stroke-width="1.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__content">
+          <h2 class="modal__title">Join as a volunteer</h2>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen
+            varius enim in eros eementum tristique.
+          </p>
+
+          <!-- FORM -->
+          <section class="form">
+            <form class="form__form">
+              <div class="form__fields">
+                <div class="form__field">
+                  <label class="form__field-label" for="first-name-contact"
+                    >First Name</label
+                  >
+                  <input
+                    class="form__field-input"
+                    type="text"
+                    name="first_name"
+                    id="first-name-contact"
+                  />
+                </div>
+                <div class="form__field">
+                  <label class="form__field-label" for="last-name-contact"
+                    >Last Name</label
+                  >
+                  <input
+                    class="form__field-input"
+                    type="text"
+                    name="last_name"
+                    id="last-name-contact"
+                  />
+                </div>
+              </div>
+              <div class="form__fields">
+                <div class="form__field">
+                  <label class="form__field-label" for="email-contact"
+                    >Email Id</label
+                  >
+                  <input
+                    class="form__field-input"
+                    type="text"
+                    name="email"
+                    id="email-contact"
+                  />
+                </div>
+                <div class="form__field">
+                  <label class="form__field-label" for="subject-contact"
+                    >Subject</label
+                  >
+                  <input
+                    class="form__field-input"
+                    type="text"
+                    name="subject"
+                    id="subject-contact"
+                  />
+                </div>
+              </div>
+              <div class="form__fields">
+                <div class="form__field">
+                  <label class="form__field-label" for="message-contact"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form__field-message"
+                    placeholder="Type your Message"
+                    name="message"
+                    id="message-contact"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form__fields form__fields--submit">
+                <button class="form__submit-btn primary-button" type="submit">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </section>
+          <!-- /FORM -->
+        </div>
+      </div>
+    </div>
+    <!-- /MODAL -->
 
     <!-- SCRIPTS -->
     <script src="js/main.js"></script>
